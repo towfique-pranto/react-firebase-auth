@@ -1,5 +1,6 @@
-import styles from "./css/register.module.css";
 import { Link } from "react-router";
+import styles from "./css/register.module.css";
+
 export default function Login() {
   return (
     <div className={styles.container}>
