@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import styles from "./css/register.module.css";
 
-export default function Login() {
+function Login() {
   return (
     <div className={styles.container}>
       <form action="" method="post" className={styles.form}>
@@ -29,3 +29,5 @@ export default function Login() {
     </div>
   );
 }
+
+export default Login;
