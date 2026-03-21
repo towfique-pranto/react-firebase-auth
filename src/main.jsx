@@ -6,6 +6,7 @@ import App from "./App.jsx";
 import Login from "./Login.jsx";
 import Register from "./Register.jsx";
 import "./index.css";
+import AuthProvider from "./AuthProvider.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>,
 );
